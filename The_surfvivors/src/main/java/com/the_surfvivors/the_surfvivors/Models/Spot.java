@@ -15,7 +15,7 @@ public class Spot {
     private String fields;
     private int difficulty_level;
     private String destination;
-    private long photos;
+    private String photos;
 }
 
 
