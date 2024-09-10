@@ -45,9 +45,9 @@ public class SpotController {
                            @Validated @RequestBody Spot spotDetails) throws ResourceNotFoundException {
         Spot spot = spotRepo.findById(SpotID)
                 .orElseThrow(() -> new ResourceNotFoundException("Spot avec ID : " + SpotID + " est inexistant"));
-             spot.setFields(spotDetails.getFields());
+             spot.setBeach(spotDetails.getBeach());
              spot.setDifficulty_level(spotDetails.getDifficulty_level());
-             spot.setDestination(spotDetails.getDestination());
+             spot.setCountry(spotDetails.getCountry());
              spot.setPhotos(spotDetails.getPhotos());
 
              return spotRepo.save(spot);
