@@ -11,11 +11,11 @@ public class Spot {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String beach;
-    private int difficulty_level;
-    private String country;
-    private String photos;
+    public long id;
+    public String beach;
+    public int difficulty_level;
+    public String country;
+    public String photos;
 }
 
 
